@@ -1,10 +1,7 @@
-import express from "express";
-import path from "path";
-import { fileURLToPath } from "url";
+var express = require('express')
+var path = require('path')
+var {fileURLToPath} = require('url')
 
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = 8080;
@@ -15,7 +12,6 @@ app.get("/", (req, res) => {
 
 // POST method route
 app.post('/', function (req, res) {
-  console.log(req)
   res.redirect('/')
 })
 

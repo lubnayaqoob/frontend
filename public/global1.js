@@ -1,5 +1,6 @@
-function myFunctionok(){
-  console.log("text print");
+console.log("This is global js file");
+function getValues() {
+  console.log("New Project");
   var weight = document.querySelector("#weight").value;
   var pickUpLocation = document.querySelector("#pickUpLocation").value;
   var dropOffLocation = document.querySelector("#dropOffLocation").value;
@@ -10,5 +11,4 @@ function myFunctionok(){
     dropOffLocation: dropOffLocation,
   };
   console.log(searchPrams);
-
 }
