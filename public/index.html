@@ -99,52 +99,42 @@
       <h2>Autonomous Truck Platoon</h2>
     </header>
     <div class="container">
-      <form id="formSubmit" action="/" method="POST" >
- 
-            <!-------------Add cargo devliery details --------------->
-            <div class="col-md-6">
-              <legend>For cargo delivery </legend>
-              <div class="form-group row">
-                <label class="col-sm-5 col-form-label text-md-right" for="weight">Select Freight :  </label>
-                <select class="col-sm-5 form-control" name="weight" id="weight">
-                  <option value="100">100 KG</option>
-                  <option value="300">300 KG</option>
-                  <option value="500">500 KG</option>
-                  <option value="1000">1000 KG</option>
-                </select>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-sm-5 col-form-label text-md-right" for="pickUpLocation">Select pickUp location :  </label>
-                <select class="col-sm-5 form-control" name="pickUpLocation" id="pickUpLocation">
-                  <option value="BlueArea">Blue Area</option>
-                  <option value="Reichstag">Reichstag</option>
-                  <option value="Brandenburg">Brandenburg</option>
-                  <option value="Berlin Television Tower">Berlin Television Tower</option>
-                </select>
-              </div>
-
-
-              <div class="form-group row">
-                <label class="col-sm-5 col-form-label text-md-right" for=dropOffLocation">Select dropOff location :  </label>
-                <select class="col-sm-5 form-control" name="dropOffLocation" id="dropOffLocation">
-                  <option value="CityCenter">City Center</option>
-                  <option value="Humboldt ">Humboldt </option>
-                  <option value="Gendarmenmarkt">Gendarmenmarkt</option>
-                  <option value="Kurfürstendamm">Kurfürstendamm</option>
-                </select>
-              </div>
-
-              <div class="submitbtn">
-                
-                <button id="btn"
-                class="btn btn-primary"
-                type="submit" 
-                style="margin: 50px 00px 00px 222px">Search
-                </button>
-                
-              </div>
+      <form class="form"  action="/" method="post" name="regForm">              
+        <div class="form-group">
+           
+          <div class="col-md-6">
+            <legend>For cargo delivery </legend>
+            <div class="form-group row">
+              <label class="col-sm-5 col-form-label text-md-right" for="weight">Select Freight :  </label>
+              <select class="col-sm-5 form-control" name="weight" id="weight">
+                <option value="100">100 KG</option>
+                <option value="300">300 KG</option>
+                <option value="500">500 KG</option>
+                <option value="1000">1000 KG</option>
+              </select>
             </div>
+            <div class="form-group row">
+              <label class="col-sm-5 col-form-label text-md-right" for="pickUpLocation">Select pickUp location :  </label>
+              <select class="col-sm-5 form-control" name="pickUpLocation" id="pickUpLocation">
+                <option value="BlueArea">Blue Area</option>
+                <option value="Reichstag">Reichstag</option>
+                <option value="Brandenburg">Brandenburg</option>
+                <option value="Berlin Television Tower">Berlin Television Tower</option>
+              </select>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-5 col-form-label text-md-right" for=dropOffLocation">Select dropOff location :  </label>
+              <select class="col-sm-5 form-control" name="dropOffLocation" id="dropOffLocation">
+                <option value="CityCenter">City Center</option>
+                <option value="Humboldt ">Humboldt </option>
+                <option value="Gendarmenmarkt">Gendarmenmarkt</option>
+                <option value="Kurfürstendamm">Kurfürstendamm</option>
+              </select>
+            </div>
+         
+        </div>
+        <button class="btn btn-primary" type="submit" class="btn btn-default" style="margin: 50px 00px 00px 222px"> Search </button>
+    </form>
           </div>
           <fieldset>
             

@@ -1,21 +1,37 @@
-var express = require('express')
-var path = require('path')
-var {fileURLToPath} = require('url')
-
-
-const app = express();
 const port = 8080;
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(`${__dirname}/public/index.html`));
+var express = require('express'),
+    app = express();
+var bodyParser = require('body-parser');
+
+app.use(express.static(__dirname + '/public'));
+
+app.use(bodyParser.urlencoded({
+   extended: false
+}));
+
+app.use(bodyParser.json());
+
+app.get('/', function(req, res){
+  res.render('form');// if jade
+  // You should use one of line depending on type of frontend you are with
+  res.sendFile(__dirname + '/form.html'); //if html file is root directory
+ res.sendFile("index.html"); //if html file is within public directory
 });
 
-// POST method route
-app.post('/', function (req, res) {
-  res.redirect('/')
-})
+app.post('/',function(req,res){
+  
+   var ferightWeight = req.body.weight;
+   var pickUpLocation = req.body.pickUpLocation;
+   var dropOffLocation = req.body.dropOffLocation;
+   var searchParams = {
+     'weight' : ferightWeight,
+     'pickUpLocation' : pickUpLocation,
+     'dropOffLocation' :dropOffLocation
+    }
 
-app.use(express.static('public'));
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+   res.send(searchParams);
+   console.log(searchParams);
 });
+
+app.listen(port);
