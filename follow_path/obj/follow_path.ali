@@ -1,0 +1,190 @@
+V "GNAT Lib v9"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U follow_path%b		follow_path.adb		80c1a182 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W protectsobj%s		protectsobj.adb		protectsobj.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+
+U follow_path%s		follow_path.ads		9dcb5774 EE NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W protectsobj%s		protectsobj.adb		protectsobj.ali
+
+D ada.ads		20200312110721 76789da1 ada%s
+D a-except.ads		20200312110721 291912d5 ada.exceptions%s
+D a-finali.ads		20200312110721 bf4f806b ada.finalization%s
+D a-ioexce.ads		20200312110721 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200312110721 119b8fb3 ada.streams%s
+D a-tags.ads		20200312110721 491b781d ada.tags%s
+D a-textio.ads		20200312110721 881db35a ada.text_io%s
+D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20200312110721 eff36322 ada.unchecked_deallocation%s
+D follow_path.ads	20210703085526 f12fbd4d follow_path%s
+D follow_path.adb	20210703084702 1d0af6f6 follow_path%b
+D gnat.ads		20200312110721 b5988c27 gnat%s
+D g-socket.ads		20200312110721 b63a5f09 gnat.sockets%s
+D interfac.ads		20200312110721 5ab55268 interfaces%s
+D i-c.ads		20200312110721 5421119b interfaces.c%s
+D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
+D protectsobj.ads	20210629082128 e4f95963 protectsobj%s
+D system.ads		20200312110721 4635ec04 system%s
+D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
+D s-assert.ads		20200312110721 cd8d2c94 system.assertions%s
+D s-conca2.ads		20200312110721 02a0d7d0 system.concat_2%s
+D s-conca4.ads		20200312110721 7e642b20 system.concat_4%s
+D s-crtl.ads		20200312110721 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200312110721 54135002 system.exception_table%s
+D s-ficobl.ads		20200312110721 078245e4 system.file_control_block%s
+D s-finmas.ads		20200312110721 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200312110721 4ff27390 system.finalization_root%s
+D s-imgrea.ads		20200312110721 c7a851e2 system.img_real%s
+D s-linux.ads		20200312110721 ed0b8aee system.linux%s
+D s-multip.ads		20200312110721 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20200808120453 0b994636 system.os_constants%s
+D s-osinte.ads		20200312110721 710cf8c6 system.os_interface%s
+D s-parame.ads		20200312110721 48ec542b system.parameters%s
+D s-pooglo.ads		20200312110721 ede33ef8 system.pool_global%s
+D s-secsta.ads		20200312110721 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20200312110721 a7318a92 system.soft_links%s
+D s-stache.ads		20200312110721 a37c21ec system.stack_checking%s
+D s-stausa.ads		20200312110721 017a0a05 system.stack_usage%s
+D s-stalib.ads		20200312110721 09bd3940 system.standard_library%s
+D s-stoele.ads		20200312110721 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20200312110721 b16154c2 system.storage_pools%s
+D s-tasinf.ads		20200312110721 2b3f8252 system.task_info%s
+D s-taspri.ads		20200312110721 f40ac08d system.task_primitives%s
+D s-taskin.ads		20200312110721 b9d612e2 system.tasking%s
+D s-taprob.ads		20200312110721 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 10|1r6 11|1r6 1r23 56r7 77r7 286r7 287r7
+X 7 a-textio.ads
+49K13*Text_IO 471e16 10|1w10 11|1w10 1r27 56r11 77r11 286r11 287r11
+263U14*Put_Line 11|56s19 77s19 286s19 287s19
+X 10 follow_path.ads
+5K9*follow_path 125l5 125e16 11|5b14 295l5 295t16
+8A9*dirc_speed(float)<integer> 124r41 11|32r19 209r41
+9A9*ds(integer)<integer> 40r41 11|39r16 82r41
+20V13*set_steering_angle{float} 20=33 24r32 25r55 26r33 27r57 28r57 29r30
+. 30r31 11|49b13 79l8 79t26 255s36 256s36 279s36 280s36
+20f33 wheel_angle{float} 21r13 21r35 21r58 24r10 24r61 25r10 25r33 25r84
+. 26r10 26r62 27r10 27r33 27r86 28r10 28r34 28r85 29r9 30r9 11|49b33 52r22
+. 57r49 60r11 61m10 65r11 66m10 69r25 71r11 72m10 73r14 74m10 77r63 78r14
+40V13*check_distance{boolean} 40>29 43r55 44r56 45r52 46r56 11|82b13 93l9
+. 93t23 225s10
+40a29 ds_values{9A9} 41r14 41r42 41r70 41r93 43r10 43r32 44r10 44r33 45r10
+. 45r31 46r10 46r33 11|82b29 88r11 88r39
+58V13*color_diff{integer} 58>25 58>40 60r75 61r75 11|112b13 126l8 126t18
+. 146s13
+58a25 a{17|8A9} 59r14 59r54 59r95 60r25 60r39 60r53 61r25 61r39 61r53 11|112b25
+. 117r15
+58a40 b{17|8A9} 59r34 59r75 59r115 60r32 60r46 60r60 61r32 61r46 61r60 11|112b40
+. 117r23
+74V13*process_camera_image{float} 75>7 75>28 77r15 77r53 11|129b13 159l8
+. 159t28 233s38 235s28 236s41 239s31 240s41 243s31 244s41 248s41 277s41
+75a7 image{17|9A9} 76r14 11|130b7 146r25
+75a28 color{17|8A9} 76r39 11|130b28 139r10 146r55
+89V13*filter_angle{float} 89>27 91r18 93r31 94r30 11|162b13 185l8 185t20
+. 233s24 235s14 236s27 239s17 240s27 243s17 244s27 248s27 277s27
+89f27 new_value{float} 90r14 90r37 91r41 93r9 94r9 11|162b27 165r30 175r11
+. 178r27
+105V13*applyPID{float} 105>23 107r18 108r15 108r41 11|188b13 205l8 205t16
+. 254s28 278s28
+105f23 line_angle{float} 106r14 107r37 11|188b23 192r28 196r19 199r15 201r33
+. 203r19 204r19
+122V13*follow_path{8A9} 123>7 123>12 123>32 124>7 11|207b13 293l8 293t19
+123i7 ds0{integer} 11|208b7 220r24
+123i12 ds1{integer} 11|208b12 221r24
+123a32 Cam_Image{17|9A9} 11|208b32 211r28
+124a7 Color_Code{17|8A9} 11|209b7
+X 11 follow_path.adb
+10f4 steering_angle{float} 58r49 60r25 61r25 65r25 66r25 69m7
+11b4 PID_need_reset{boolean} 191r10 194m10
+12b4 red_signal{boolean}
+13i4 pause_counter{integer}
+14I12 rows{integer} 132r32
+15I12 cols{integer} 132r44 144r28 145r30 147r42 156r54
+16f4 camera_fov{float} 157r11
+17f4 oldValue{float} 192m10 196r43 199r28 203m7
+18f4 integral{float} 193m10 197m10 200r15 201m10 201r22 204r37
+19b4 first_call{boolean} 165r11 166m10
+20A9 filter(float)<integer> 21r17
+21a4 old_value{20A9} 168m13 172m13 172r30 178m10 181r26
+22f4 line_angle{float} 233m10 236m13 240m13 244m13 248m13 252r14 254r38 277m13
+. 278r38
+23a4 r_red{17|8A9} 30r63
+24a4 r_white{17|8A9} 30r31 277r68
+25a4 r_blue{17|8A9} 30r39
+26a4 r_green{17|8A9} 30r46
+27a4 r_yellow{17|8A9} 30r54
+29A9 Color_array(17|8A9)<integer> 30r16
+30a4 line_plan{29A9} 233r65 235r55 236r68 237m13 239r58 240r68 241m13 243r58
+. 244r68 245m13 248r68 249m13
+32a4 speed_values{10|8A9} 289m7 290m7 291r14
+34f4 angle{float} 254m13 255m56 255r56 256m56 256r56 278m13 279m56 279r56
+. 280m56 280r56
+35f4 init_speed{float} 215m7 216r21 253r28 276r28
+36f4 speed{float} 216m7 226m10 227r25 228r25 231r24 232r25 253m13 255r28
+. 256r28 276m13 279r28 280r28
+37f4 left_speed{float} 227m10 231m10 255m13 279m13 286r58 289r27
+38f4 right_speed{float} 228m10 232m10 256m13 280m13 287r59 290r27
+39a4 ds_values{10|9A9} 220m7 221m7 225r26
+41f4 UNKNOWN{float} 140r17 152r17 165r42 175r23 176r17 235r73 239r76 243r76
+. 252r28
+42f4 KP{float} 204r14
+43f4 KI{float} 204r32
+44f4 KD{float} 204r48
+46i4 TIME_STEP{integer} 214m7
+96V13 set_speed{float} 96b13 96>24 99l8 99t17 226s25
+96f24 speed{float} 98r14
+101V13 signbit{integer} 101b13 101>22 108l8 108t15 196s10 196s34
+101f22 x{float} 103r10
+113i7 diff{integer} 120m13 120r21 122m13 122r21 125r14
+114i7 d{integer} 117m10 119r13 120r28 122r28
+116i11 i{integer} 117r18 117r26
+132i7 num_pixels{integer} 143r21
+133i7 sumx{integer} 147m13 147r28 156r17
+134i7 pixel_count{integer} 148m13 148r28 151r10 156r32
+135i7 pixel_row{integer} 144m10 146r32
+136i7 pixel_col{integer} 145m10 146r43
+143i11 x{integer} 144r24 145r24 147r36
+163f7 sum{float} 179m10 181m13 181r20 183r24
+167i14 i{integer} 168r24
+171i14 i{integer} 172r24 172r41
+180i14 i{integer} 181r37
+189f7 diff{float} 199m7 204r53
+211a7 img{17|9A9} 233r60 235r50 236r63 239r53 240r63 243r53 244r63 248r63
+. 277r63
+X 17 protectsobj.ads
+5K9*ProtectsObj 10|2w6 2r23 11|2w6 2r23 17|120e16
+8A9*color_BGR(integer)<integer> 10|58r29 58r44 75r36 76r48 124r23 11|23r14
+. 24r14 25r14 26r14 27r15 29r40 112r29 112r44 130r36 209r23
+9A9*image_array(8A9)<integer><integer> 10|75r15 76r23 123r44 11|130r15 208r44
+. 211r13
+45w14*SpeedObj 11|215r21
+48V16 GetSpeed{float} 11|215s30
+X 38 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+
